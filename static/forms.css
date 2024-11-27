@@ -1,0 +1,54 @@
+/* forms.css */
+.container {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #333;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="submit"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+form p {
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+}
+
+form p a {
+    color: #007bff;
+}
+
+form p a:hover {
+    color: #0056b3;
+}

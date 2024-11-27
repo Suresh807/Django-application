@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to your Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'profile' %}">Profile</a></li>
+                <li><a href="{% url 'change_password' %}">Change Password</a></li>
+                <li><a href="{% url 'logout' %}">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Your Profile Information</h2>
+        <p><strong>Username:</strong> {{ user.username }}</p>
+        <!-- Add more user details if needed -->
+    </main>
+    <footer>
+        <p>© 2024 Your Company</p>
+    </footer>
+</body>
+</html>
