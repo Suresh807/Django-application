@@ -136,3 +136,7 @@ STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # settings.py
 ALLOWED_HOSTS = ['*']  # Or specify the Vercel domain if necessary
+
+# Whitenoise settings to serve static files
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
